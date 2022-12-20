@@ -4,13 +4,34 @@
 
 This project is build up for ERC-20 token where token count and valued is defined by contract creator.
 
-# Prerequisite
-You should have following installed on your system:
-- `Node`
-- `Ganche`
-- `Truffle`
-- `Metamask`
-- `Solidity`
+✨ This repository showing that how we are using clean code architecture, folder structure, and component reusability.✨
+
+We at Fiftyfive Technologies follow the practices defined by SOLID principles and Clean Architecture.
+
+## Features
+
+- _**Functionality**_  : Work correctly, efficiently, and robustly.
+- _**Readability**_    : The primary audience for our code is other developers.
+- _**Extensibility**_  : Well-designed code should be extensible as a building block for solving new problems.
+- _**Scalability**_    : The code that can scale along with the need of your business.
+
+## Tech Stack
+
+- [NodeJS](https://nodejs.org/en/) - JS runtime environment
+- [Truffle](https://trufflesuite.com/) - Web3 development framework on top of node.
+- [Ganache](https://trufflesuite.com/ganache/) - For local web3 environment to maintain dev/testing blockchain. 
+- [Metamask](https://metamask.io/) - For decentralised crypto wallet.
+- [Solidity](https://soliditylang.org/) - To generate smart contracts.
+
+## Package manager - npm
+This project is using `npm` as package manager, if you do not have this installed on your machine please start by looking at the [npm docuentation and tutorials](https://docs.npmjs.com/). After installing the package manager the following commands will be availible for you:
+- `npm install` - Installing dev dependencies.
+- `npm run start:local` - To start the sever.
+
+If you seem to still have issues with these commands, try running `npm cache clean` and do `npm install` or `npm install --legacy-peer-deps`
+
+## Linting
+Project is using ESLint to make sure that we keep same coding style in the project. Currently the project is using default ruleset, but custom can be defined in `.eslintrc.json`.
 
 # How to use this package
 
@@ -58,7 +79,8 @@ truffle test
 │       └───TestCoin.json
 ├───test/
 │   └───test_coin.js
-└───truffle-config.js
+├── truffle-config.js
+└───.gitignore
 
 ```
 **contracts** - Contains the solidity contract for crypto test token which holds up the Ether in exchange of TTC with its exchange rate and existing limitations .
@@ -71,6 +93,8 @@ truffle test
 
 **truffle-config.js** - It consist on network configration where we need to deploy out our contract.
 
-## Author
+## License
 
 Fiftyfive Technologies
+
+**We are relentlessly focusing on digital transformation. Dive deep into the customer cases to know more about the project which we delivered.**
